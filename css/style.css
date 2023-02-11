@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    ---Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    ---Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.outer-div {
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    background-color:var(--Light-grayish-blue);
+    color: white;
+    font-family: Condensed ;
+    justify-content: center;
+    padding: 5rem;
+}
+img{
+    border-radius: 50%;
+    size: 10px;
+
+    
+}
+
+
+
+
+.outer-div > div{
+    border-radius: 1rem;
+}
+
+
+/* ---------------------[.one-div  start }-------------------------------------- */
+
+.outer-div>.one-div:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    background-color:var(--Moderate-violet);
+    
+    
+}
+
+.outer-div > .one-div > .dan {
+   display: flex;
+   text-align: center;
+   padding: 2rem 2rem;
+
+}
+.outer-div > .one-div > .dan > .a{
+    padding: 1rem;
+   
+}
+
+.one-div > h3 {
+    padding: 0.5rem;
+}
+
+.one-div > p{
+    padding: 1rem;
+}
+
+/* --------------------[ .one-div  end  ]-------------------------------------------------- */
+
+
+/* --------------------[two-div  start]--------------------------------------------------- */
+.outer-div> .two-div:nth-of-type(2) {
+    background-color: var(---Very-dark-grayish-blue);
+}
+
+.outer-div > .two-div >.jon{
+    display: flex;
+   text-align: center;
+   padding: 2rem 2rem;
+}
+
+.outer-div > .two-div > .jon > .b{
+    padding: 1rem;
+}
+
+.two-div > h3{
+    padding: 0.5rem;
+}
+.two-div > p{
+    padding: 1rem;
+}
+/* -------------------[two-div   end]-------------------------------------------------- */
+
+
+/* ------------------[third-div   start]----------------------------------------------- */
+.outer-div> .third-div:nth-of-type(3) {
+    background-color: var(--White);
+    grid-row: 1/3;
+    grid-column: 4/5;
+    color: black;
+}
+
+.outer-div > .third-div > .kira{
+    display: flex;
+   text-align: center;
+   padding: 2rem 2rem;
+}
+
+.outer-div > .third-div > .kira> .c{
+    padding: 0.5rem;
+}
+.third-div > h3{
+    padding: 0.5rem;
+}
+.third-div > p{
+    padding: 1rem;
+}
+/* --------------[third-div    end ]--------------------------------------------- */
+/* --------------[four-div   start]--------------------------------------------- */
+.outer-div > .four-div:nth-of-type(4){
+    background-color: var(--White);
+    color: black;
+}
+
+.outer-div > .four-div > .jee{
+    display: flex;
+   text-align: center;
+   padding: 2rem 2rem;
+}
+
+.outer-div > .four-div >.jee> .d{
+    padding: 0.5rem;
+   
+}
+.four-div > h3{
+    padding: 0.5rem;
+}
+.four-div > p{
+    padding: 1rem;
+}
+/* --------------[four-div end]---------------------------------------------------- */
+
+/* --------------[.five-div start]---------------------------------------------------------- */
+.outer-div> .five-div:nth-of-type(5) {
+    grid-column: 2 /-2;
+    background-color: var(---Very-dark-blackish-blue);
+}
+.outer-div > .five-div > .pat{
+    display: flex;
+   text-align: center;
+   padding: 2rem 2rem;
+}
+.outer-div > .five-div > .pat > .e {
+    padding: 0.8rem;
+}
+.five-div > h3{
+    padding: 0.5rem;
+}
+.five-div > p{
+    padding: 1rem;
+}
+/* -------------[.five-div  end]----------------------------------------------------------------- */
+@media screen and (max-width:500px){
+    .outer-div {
+        display: flex;
+        flex-direction: column;
+        padding: 6rem 3rem;
+        background-color: yellowgreen;
+        height: auto;
+    }
+    
+}
